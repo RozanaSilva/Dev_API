@@ -1,0 +1,15 @@
+paths:
+  /secured/:
+    get:
+      tags:
+        - Secured
+      summary: Access to a secured resource
+      security:
+        - basicAuth: []
+      produces:
+        - text/plain
+      responses:
+        200:
+        description: Success Message
+        401:
+          description: Basic Authentication required

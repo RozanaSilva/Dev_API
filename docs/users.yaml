@@ -1,0 +1,12 @@
+paths:
+  /users/:
+    get:
+      tags:
+        - User
+      summary: Access to unsecured resource
+      security: [] # No security
+      produces:
+        - text/plain
+      responses:
+      200:
+      description: Success Message
